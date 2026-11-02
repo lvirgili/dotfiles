@@ -1,0 +1,5 @@
+# Ignore secrets or runtime caches
+*.log
+*.sqlite3
+history
+gdb/
