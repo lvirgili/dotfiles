@@ -1,0 +1,11 @@
+[general]
+bibfiles = ["~/academic/references.bib"]
+
+editor = "hx"
+pdf_opener = "xdg-open"
+url_opener = "xdg-open"
+
+pdf_path = "~/academic/pdfs"
+
+note_path = "~/academic/notes"
+note_extensions = ["md"]

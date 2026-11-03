@@ -1,0 +1,27 @@
+[[language]]
+name = "c"
+formatter = { command = "clang-format", args = ["--style={BasedOnStyle: Mozilla, IndentWidth: 4, TabWidth: 4, UseTab: Never}"] }
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+# Desativa a formatação do clangd para não haver conflitos
+[language-server.clangd]
+command = "clangd"
+args = ["--header-insertion=never", "--fallback-style=none"]
+
+# Typst Language Configuration
+[[language]]
+name = "typst"
+scope = "source.typst"
+injection-regex = "typst"
+file-types = ["typ"]
+roots = ["typst.toml"]
+comment-token = "//"
+language-servers = ["tinymist"]
+
+[language-server.tinymist]
+command = "tinymist"
+
+[[language]]
+name = "markdown"
+formatter = { command = "prettier", args = ["--parser", "markdown", "--print-width", "80", "--prose-wrap", "always"] }

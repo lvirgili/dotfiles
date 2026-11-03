@@ -1,0 +1,17 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+line-number = "absolute"
+cursorline = true
+auto-pairs = true
+color-modes = true
+auto-format = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "|"
